@@ -1,0 +1,13 @@
+.git
+.gitignore
+.DS_Store
+__pycache__
+*.pyc
+*.pyo
+*.egg-info
+.pytest_cache
+.venv
+venv
+*.ipynb
+.ipynb_checkpoints
+README.md

@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  streamlit-app:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    ports:
+      - "8501:8501"
+    environment:
+      - STREAMLIT_SERVER_HEADLESS=true
+    volumes:
+      - ../app.py:/app/app.py
+      - ../iris_model.pkl:/app/iris_model.pkl
